@@ -1,6 +1,6 @@
 const express = require('express');
 const { body } = require('express-validator');
-const { signup, login, verifyEmailOTP } = require('../notes-api/controllers/authController');
+const { signup, login, verifyEmailOTP } = require('../controllers/authController');
 const router = express.Router();
 
 // Signup route

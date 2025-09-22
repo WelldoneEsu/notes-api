@@ -1,8 +1,8 @@
-const User = require('..notes-api/models/User');
+const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 const { validationResult } = require('express-validator');
 const crypto = require('crypto');
-const sendEmailOTP = require('../notes-api/utils/sendEmail');
+const sendEmailOTP = require('../utils/sendMail');
 
 // Helper to generate JWT
 const generateToken = (user) => {

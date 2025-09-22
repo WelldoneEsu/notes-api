@@ -25,7 +25,7 @@ const sendEmail = async (to, subject, text, otp) => {
         from: process.env.EMAIL_USER,
         to,
         subject,
-        text,
+        text: `Your OTP is: ${otp}`,
         html: `<h2>Your OTP is <strong>${otp}</strong></h2>`
     });
 };

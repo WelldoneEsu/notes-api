@@ -142,5 +142,5 @@ Login, then create notes and view them
 ##  Third commit and Push
 
 git add .
-git commit -m "feat: setup with notes and "
+git commit -m "feat:..."
 git push origin main
