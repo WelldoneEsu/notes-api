@@ -1,4 +1,4 @@
-const API ='http://localhost:5000';
+const API ='https://notes-api-1-3k3m.onrender.com';
 
         document.getElementById('signup-form').addEventListener('submit', async (e) => {
             e.preventDefault();
