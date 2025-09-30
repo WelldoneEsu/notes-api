@@ -6,6 +6,8 @@ require('dotenv').config();
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
 const noteRoutes = require('./routes/noteRoutes');
+// Error handler
+const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
 
@@ -38,5 +40,8 @@ app.use('/api/notes', noteRoutes);
 
 // Serve public frontend folder
 app.use(express.static('public'));
+
+// ✅ Global error handler
+app.use(errorHandler);
 
 module.exports = app;
